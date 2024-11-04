@@ -41,8 +41,8 @@ const Navbar = () => {
       </motion.div>
       {
         open ? (
-          <nav className='lg:hidden'>
-            <ul className='flex flex-col space-y-10 bg-gray-950 text-gray-300 w-[300px] h-[950px] items-center pt-36 absolute text-2xl font-semibold top-0 z-30 right-0 '>
+          <nav className='lg:hidden '>
+            <ul className='flex flex-col border-l border-[#33CCCC] space-y-10 bg-gray-950 text-gray-300 w-[300px] h-[950px] items-center pt-36 absolute text-2xl font-semibold top-0 z-30 right-0 '>
                  <li>Services</li>
                  <li>About</li>
                  <li>Blog</li>
