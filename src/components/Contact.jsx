@@ -69,7 +69,7 @@ const Contact = () => {
             className='bg-[#c7e9ec]  shadow-xl shadow-[#33CCCC] rounded-lg p-8 md:p-12 max-w-3xl w-full flex flex-col items-center md:flex-row gap-7 space-y-6 md:space-y-0 md:space-x-8'>
                 <div className='flex-1'>
                     <h3 className='text-2xl font-semibold text-primary mb-4'>Our Location</h3>
-                    <div className='text-gray-600 flex gap-2 items-center'>
+                    <div className='text-gray-950 flex gap-2 items-center'>
                         <MapPin fill='#33CCCC' className='text-gray-900 ' />
                         <p>
                             123 Business Avenue, <br />
@@ -78,11 +78,11 @@ const Contact = () => {
                     </div>
                     <div className='flex gap-2 items-center'>
                         <Phone fill='#33CCCC' className='text-gray-900 ' />
-                        <p className='text-gray-600 mt-4'>Phone: (123) 456-7890</p>
+                        <p className='text-gray-950 mt-4'>Phone: (123) 456-7890</p>
                     </div>
                     <div className='flex gap-2 items-center'>
                         <Mail fill='#33CCCC' className='text-gray-900 ' />
-                        <p className='text-gray-600'>Email: contact@business.com</p>
+                        <p className='text-gray-950'>Email: contact@business.com</p>
                     </div>
                 </div>
                 <div>
