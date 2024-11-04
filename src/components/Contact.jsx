@@ -1,18 +1,31 @@
 import React from 'react'
 import {Mail, MapPin, Phone} from 'lucide-react'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
   return (
     <div id='contact' className='bg-gray-950'>
       <div className='max-w-7xl mx-auto items-center flex flex-col py-8 px-4 md:px-8 min-h-screen'>
         {/* header */}
-        <h2 className='text-3xl md:text-4xl font-bold text-primary mb-4 text-center text-[#33CCCC] drop-shadow-md'>Get in Touch</h2>
-        <p className='text-gray-300 text-center max-w-xl mb-12'>
+        <motion.h2 
+         initial={{ opacity: 0, scale:0.5 }}
+         whileInView={{ opacity: 1, scale:1 }}
+         transition={{ duration: 1, delay: 0.2 }}
+        className='text-3xl md:text-4xl font-bold text-primary mb-4 text-center text-[#33CCCC] drop-shadow-md'>Get in Touch</motion.h2>
+        <motion.p 
+        initial={{ opacity: 0, scale:0.5 }}
+        whileInView={{ opacity: 1, scale:1 }}
+        transition={{ duration: 1.5, delay: 0.4 }}
+        className='text-gray-300 text-center max-w-xl mb-12'>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium maiores aut dolores quo asperiores iste, id consequatur dolorum deleniti quod!
-        </p>
+        </motion.p>
         <div className='grid md:grid-flow-col gap-10'>
             {/* contact form  */}
-            <div className='bg-[#c7e9ec] shadow-xl shadow-[#33CCCC] rounded-lg p-8 md:p-12 max-w-xl md:w-[400px]'>
+            <motion.div 
+            initial={{ opacity: 0, scale:0.5 }}
+            whileInView={{ opacity: 1, scale:1 }}
+            transition={{ duration: 1.5, delay: 0.4 }}
+            className='bg-[#c7e9ec] shadow-xl shadow-[#33CCCC] rounded-lg p-8 md:p-12 max-w-xl md:w-[400px]'>
                 <form className='flex flex-col space-y-6'>
                     <div>
                         <label htmlFor="name" className='block text-sm font-medium text-gray-900 '>
@@ -47,9 +60,13 @@ const Contact = () => {
                     </div>
                     <button type='submit' className='bg-[#33CCCC] text-white py-2 px-4 rounded-md shadow-md hover:bg-black'>Send Message</button>
                 </form>
-            </div>
+            </motion.div>
             {/* location and map */}
-            <div className='bg-[#c7e9ec]  shadow-xl shadow-[#33CCCC] rounded-lg p-8 md:p-12 max-w-3xl w-full flex flex-col items-center md:flex-row gap-7 space-y-6 md:space-y-0 md:space-x-8'>
+            <motion.div 
+            initial={{ opacity: 0, scale:0.5 }}
+            whileInView={{ opacity: 1, scale:1 }}
+            transition={{ duration: 1.5, delay: 0.4 }}
+            className='bg-[#c7e9ec]  shadow-xl shadow-[#33CCCC] rounded-lg p-8 md:p-12 max-w-3xl w-full flex flex-col items-center md:flex-row gap-7 space-y-6 md:space-y-0 md:space-x-8'>
                 <div className='flex-1'>
                     <h3 className='text-2xl font-semibold text-primary mb-4'>Our Location</h3>
                     <div className='text-gray-600 flex gap-2 items-center'>
@@ -82,7 +99,7 @@ const Contact = () => {
                     ></iframe>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
       </div>
     </div>

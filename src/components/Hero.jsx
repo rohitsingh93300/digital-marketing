@@ -1,10 +1,10 @@
 import React from 'react'
-import hero from '../assets/Hero1.json'
+// import hero from '../assets/Hero1.json'
 import { ChevronRight } from 'lucide-react'
 import {motion} from 'framer-motion'
-import {FadeRight, FadeUp} from '../utility/Animation'
+import {FadeRight} from '../utility/Animation'
 import bg from '../assets/bg1.jpg'
-import Lottie from 'lottie-react'
+// import Lottie from 'lottie-react'
 
 
 const Hero = () => {
@@ -18,10 +18,10 @@ const Hero = () => {
        // filter: 'blur(5px)',
        zIndex: -1
    }}
-  className=' bg-gray-900 relative z-10 overflow-x-hidden lg:overflow-x-visible'>
+  className=' bg-gray-900 relative z-10 overflow-x-hidden overflow-y-hidden'>
     < div className="absolute inset-0 bg-black opacity-85" ></div>
       <div className='relative max-w-7xl mx-auto'>
-        <div className='flex flex-col lg:flex-row gap-6 h-screen lg:h-[650px] lg:justify-center lg:items-center lg:pt-0 pt-12'>
+        <div className='flex lg:h-[650px] justify-center items-center lg:pt-0 pt-20'>
           {/* hero text */}
           <div className=' flex flex-col space-y-8 justify-center items-center text-center px-5 md:px-0'>
             <motion.h3 
@@ -52,19 +52,6 @@ const Hero = () => {
               className='rounded-md px-4 py-2 bg-transparent text-white border-2  border-green-200 shadow-[0_0_2px_#fff,inset_0_0_2px_#fff,0_0_5px_#33CCCC,0_0_15px_#33CCCC,0_0_30px_#33CCCC]'>Learn More</motion.button>
             </div>
           </div>
-          {/* hero img */}
-          {/* <motion.div 
-          initial={{opacity:0,scale:0.7}}
-          whileInView={{opacity:1,scale:1}}
-          transition={{duration:1.8, delay:0.8}}
-          className='lg:w-1/2 flex justify-center'> */}
-            {/* <motion.img 
-            // initial={{opacity:0,x:200, scale:0.7}}
-            // whileInView={{opacity:1,x:0, scale:1}}
-            // transition={{duration:1.8, delay:0.8}}
-            src={hero} alt="" /> */}
-            {/* <Lottie animationData={hero} className='w-[350px] md:w-[550px]'/>
-          </motion.div> */}
         </div>
       </div>
     </div>

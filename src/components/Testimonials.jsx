@@ -3,6 +3,7 @@ import bg from '../assets/bg1.jpg'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { motion } from 'framer-motion';
 
 const TestimonialData = [
     {
@@ -86,10 +87,18 @@ const Testimonials = () => {
             <div className='relative max-w-7xl mx-auto items-center text-center'>
                 {/* header section */}
                 <div className='text-center mb-10 max-w-[600px] mx-auto'>
-                    <h2 className='text-3xl md:text-4xl font-bold text-primary mb-4 text-center text-[#33CCCC]'>Testimonials</h2>
-                    <p className='text-gray-300 max-w-xl mx-auto mb-8'>
+                    <motion.h2 
+                    initial={{ opacity: 0, scale:0.5 }}
+                    whileInView={{ opacity: 1, scale:1 }}
+                    transition={{ duration: 1, delay: 0.2 }}
+                    className='text-3xl md:text-4xl font-bold text-primary mb-4 text-center text-[#33CCCC]'>Testimonials</motion.h2>
+                    <motion.p 
+                    initial={{ opacity: 0, scale:0.5 }}
+                    whileInView={{ opacity: 1, scale:1 }}
+                    transition={{ duration: 1.5, delay: 0.4 }}
+                    className='text-gray-300 max-w-xl mx-auto mb-8'>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit perspiciatis amet voluptate libero reprehenderit, repellendus aliquam vero. Unde, harum assumenda!
-                    </p>
+                    </motion.p>
                 </div>
                 {/* Testimonials cards */}
                 <div>

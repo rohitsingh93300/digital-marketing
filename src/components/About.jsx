@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 const About = () => {
   const [counterOn, setCounterOn] = useState(false)
   return (
-    <div className='bg-gray-950 py-20 px-5 md:px-0'>
+    <div className='bg-gray-950 py-20 px-5 md:px-0 overflow-x-hidden overflow-y-hidden'>
       <div className='max-w-7xl mx-auto '>
         <div className='flex flex-col md:flex-row gap-7 items-center'>
           <div className='md:w-1/2 space-y-5'>

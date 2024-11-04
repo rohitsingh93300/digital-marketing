@@ -36,19 +36,19 @@ const Navbar = () => {
             <li className='hover:text-[#33CCCC] cursor-pointer transition-all'>Contact Us</li>
             <button className='bg-[#33CCCC] cursor-pointer text-white px-4 py-2 rounded-md'>Get Started</button>
           </ul>
-          <Menu onClick={Navhandler} className='lg:hidden'/>
+          <Menu onClick={Navhandler} className='lg:hidden text-white'/>
         </div>
       </motion.div>
       {
         open ? (
           <nav className='lg:hidden'>
-            <ul className='flex flex-col space-y-10 bg-slate-50 w-[300px] h-[950px] items-center pt-36 absolute text-2xl font-semibold top-0 z-30 right-0 '>
-                 <li>Home</li>
+            <ul className='flex flex-col space-y-10 bg-gray-950 text-gray-300 w-[300px] h-[950px] items-center pt-36 absolute text-2xl font-semibold top-0 z-30 right-0 '>
+                 <li>Services</li>
                  <li>About</li>
-                 <li>Inventory</li>
+                 <li>Blog</li>
                  <li>Contact Us</li>
-                 <button className='bg-red-500 text-white px-4 py-2 rounded-full'>Book a Test Drive</button>
-                 <X onClick={Navhandler} className='z-50 absolute top-0 right-10 border border-black p-1 rounded-md'/>
+                 <button className='bg-[#33CCCC] text-white px-4 py-2 rounded-md'>Get Started</button>
+                 <X onClick={Navhandler} className='z-50 absolute top-0 right-10 border border-[#33CCCC] p-1 rounded-md'/>
             </ul>
           </nav>
         ):null
